@@ -6,9 +6,7 @@ This is a shell script, it has a menu with dev tools like
 --Start burp suite
 --Run frida default command
 
-Run the command :
-
-./menu 
+Run the command : ./menu 
 
 and you are set.
 
