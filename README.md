@@ -1,5 +1,5 @@
 # Install Android Apk - Start Frida Server - Run Burp Suite
-This is a automate shell script, it has a menu with dev tools to start frida server or install-uninstall android apk or start burp suite
+This is an automate shell script that has a menu of dev tools for starting frida server, installing android apk, and starting burp suite
 
 --Start frida server
 --Install android apk
