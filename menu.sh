@@ -20,10 +20,10 @@ select opt in "${options[@]}"
 do
     case $opt in
         "install-uninstall APK")
-            sh ./installApk.sh
+            sh ./sh/installApk.sh
             ;;
         "Run fridaServer")
-            sh ./fridaServerStart.sh
+            sh ./sh/fridaServerStart.sh
             ;;
         "Start Burp Suite")
             echo '' 
@@ -33,7 +33,7 @@ do
             sh ./menu.sh
             ;;
         "Run Frida Default Javascript doc")
-            sh ./showFridaCommand.sh
+            sh ./sh/showFridaCommand.sh
             ;;    
         "Quit")
             break
