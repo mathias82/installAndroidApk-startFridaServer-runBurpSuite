@@ -9,9 +9,9 @@ This is an automate shell script that has a menu of dev tools for starting frida
 # Instructions
 
 ```
-Rename the frida server to 'fridaServer' ex. /data/local/tmp/fridaServer
-Run the command: chmod +x menu.sh
-Finally run: ./menu 
+1) Rename the frida server to 'fridaServer' ex. /data/local/tmp/fridaServer
+2) Run the command: chmod +x menu.sh
+3) Finally run: ./menu 
 
 ```
 
