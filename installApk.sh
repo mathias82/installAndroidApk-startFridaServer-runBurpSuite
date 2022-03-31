@@ -1,7 +1,7 @@
 #!/bin/bash
 # Basic adb commands for install apk and uninstall apk
 # Copyright (C) 2022 mstavrou
-# Last revised 09/03/2022
+# Last revised 31/03/2022
 
 clear
 
@@ -29,11 +29,12 @@ echo ''
 echo ''
 echo ''
 echo '1 – Uninstall app'
-echo '2 – All Installed Packages'
-echo '3 – Install app simple apk'
-echo '4 – Install-multiple apk'
-echo '5 – Uninstall & install app'
-echo '6 – Back'
+echo '2 – Mass-Uninstall all the packages you added'
+echo '3 – All Installed Packages'
+echo '4 – Install app simple apk'
+echo '5 – Install-multiple apk'
+echo '6 – Uninstall & install app'
+echo '7 – Back'
 echo '' 
 echo '' 
 read -n 1 -s -r -p 'Select operation type, ESC to cancel...' key
@@ -66,13 +67,30 @@ adb devices | tail -n +2 | cut -sf 1 | xargs -I {} adb -s {} uninstall $data
 2)
 echo '' 
 echo '' 
+echo 'Mass-Uninstall all the packages you added, Ctrl+C to cancel...'
+echo '' 
+echo 'The Package Latest List of Installed Application, which will uninstall'
+echo '' 
+adb shell pm list packages -3 | cut -f 2 -d ":"
+echo '' 
+echo ''
+echo 'Uninstall started'
+echo '-------------------------'
+adb shell pm list packages -3 | cut -f 2 -d ":" | while read line
+do
+adb devices | tail -n +2 | cut -sf 1 | xargs -I {} adb -s {} uninstall $line
+done
+;;
+3)
+echo '' 
+echo '' 
 echo 'Show all installed packages' 
 echo ''
 echo 'All installed packages started'
 echo '-------------------------'
 adb shell pm list packages
 ;;  
-3)
+4)
 echo '' 
 echo '' 
 echo 'Enter path to APK file to install and press Enter, Ctrl+C to cancel...' 
@@ -83,7 +101,7 @@ echo 'Install started'
 echo '-------------------------'
 adb devices | tail -n +2 | cut -sf 1 | xargs -I {} adb -s {} install $data
 ;; 
-4)
+5)
 echo '' 
 echo '' 
 echo 'Enter path to APK file to install and press Enter, Ctrl+C to cancel...' 
@@ -94,7 +112,7 @@ echo 'Install started'
 echo '-------------------------'
 adb devices | tail -n +2 | cut -sf 1 | xargs -I {} adb -s {} install-multiple $data
 ;;
-5)
+6)
 echo '' 
 echo '' 
 echo 'Enter app package name to uninstall, e.g. com.games.XXX and press Enter, Ctrl+C to cancel...'
@@ -113,7 +131,7 @@ echo 'Install started'
 echo '-------------------------'
 adb devices | tail -n +2 | cut -sf 1 | xargs -I {} adb -s {} install $data2
 ;;
-6)
+7)
 echo '' 
 echo '' 
 echo '' 
