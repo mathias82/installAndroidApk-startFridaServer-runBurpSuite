@@ -15,11 +15,11 @@ echo '|||||||||||||||||||||||||||||||'
 echo ''
 
 PS3='Please enter your choice: '
-options=("install-uninstall APK" "Run fridaServer" "Start Burp Suite" "Run Frida Default Javascript doc" "Quit")
+options=("Install-Uninstall APK" "Run fridaServer" "Start Burp Suite" "Run Frida Default Javascript doc" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "install-uninstall APK")
+        "Install-Uninstall APK")
             sh ./sh/installApk.sh
             ;;
         "Run fridaServer")
