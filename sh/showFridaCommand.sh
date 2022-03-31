@@ -59,7 +59,7 @@ echo 'Frida started'
 echo '-------------------------'
 frida -U -f $data -l js/fakeLocation.js --no-pause
 ;;
-6)
+2)
 echo '' 
 echo '' 
 echo '' 
