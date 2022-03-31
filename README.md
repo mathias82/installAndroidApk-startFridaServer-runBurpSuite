@@ -12,7 +12,7 @@ This is an automate shell script that has a menu of dev tools for starting frida
 2) Run the command: chmod +x menu.sh
 3) Finally run: ./menu 
 
-<img width="682" alt="4KJfG9R9kvSpUJP" src="https://user-images.githubusercontent.com/4541512/161046350-c720e219-475b-46fb-aec5-3ea4d3e69326.png">
+<img width="682" alt="5Wt6HwVQ4oRUq6u" src="https://user-images.githubusercontent.com/4541512/161047030-17b68917-2896-4ea4-9660-e5a1245b4f28.png">
 
 <img width="682" alt="8kDCKFwuBnjLjk3" src="https://user-images.githubusercontent.com/4541512/161045971-d3e7530f-55d3-43c1-bd52-1179a8ec5f23.png">
 
