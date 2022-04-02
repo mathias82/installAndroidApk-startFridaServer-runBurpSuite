@@ -15,7 +15,7 @@ echo '|||||||||||||||||||||||||||||||'
 echo ''
 
 PS3='Please enter your choice: '
-options=("Install-Uninstall APK" "Run Frida Server" "Start Burp Suite" "Run Frida Default Javascript" "Quit")
+options=("Install-Uninstall APK" "Run Frida Server" "Start Burp Suite" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -31,10 +31,7 @@ do
             echo ''
             nohup java -jar $data &
             sh ./menu.sh
-            ;;
-        "Run Frida Default Javascript")
-            sh ./sh/showFridaCommand.sh
-            ;;    
+            ;;  
         "Quit")
             break
             ;;
