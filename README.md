@@ -15,6 +15,6 @@ This is an automate shell script that has a menu of dev tools for starting frida
 
 ```
 
-<img width="700" alt="BkBkU5KbjXSBhp4" src="https://user-images.githubusercontent.com/4541512/161048773-049a3da0-ea4c-464e-8dca-3d1147ee5337.png">
+<img width="700" alt="9sK9x6CNEUAfhxE" src="https://user-images.githubusercontent.com/4541512/161403601-af271a81-262f-4aa4-a845-f56c78a7f91c.png">
 
 <img width="700" alt="Wz8m6s8vGBuojLa" src="https://user-images.githubusercontent.com/4541512/161048925-4585b04b-e0dc-4012-b678-ee27a0196c92.png">
